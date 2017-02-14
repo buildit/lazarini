@@ -13,3 +13,5 @@ $ yarn
 ```sh
 $ npm test
 ```
+
+## Respect nature and your peers, wash your hands
