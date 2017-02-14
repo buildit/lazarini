@@ -1,0 +1,20 @@
+doctype html
+html(lang="en")
+    head
+        title= pageTitle
+        link(rel="stylesheet", href="/main.min.css")
+        script(type='text/javascript').
+            // We are not using client side rendering
+            console.log('no locals from pug (./data.json)')
+    body
+        h1 Pug - node template engine
+        #container.col
+            if youAreUsingPug
+                p You are amazing
+            else
+                p Get on it!
+            p #{data.foo}
+            p.
+                Pug is a terse and simple templating language with a
+                strong focus on performance and powerful features.
+    script(type='text/javascript', src="/index.js")

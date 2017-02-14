@@ -1,0 +1,22 @@
+sudo: false
+language: node_js
+cache:
+  directories:
+  - node_modules
+branches:
+  only:
+  - master
+  except:
+  - "/^v\\d+\\.\\d+\\.\\d+$/"
+notifications:
+  email: false
+node_js:
+- '7'
+before_script:
+  - npm prune
+script:
+  - npm run cover
+  - npm run check-coverage
+  - npm run build
+after_success:
+  - npm run report-coverage
