@@ -13,10 +13,13 @@ notifications:
 node_js:
 - '7'
 before_script:
-  - npm prune
+- npm prune
 script:
-  - npm run cover
-  - npm run check-coverage
-  - npm run build
+- npm run cover
+- npm run check-coverage
+- npm run build
 after_success:
-  - npm run report-coverage
+- npm run report-coverage
+deploy:
+  api_key:
+    secure: KvDgtarirBINUbG19X0cr74x6NocJDFMZ8X0Urs1NMtFjnTX0MUo5NuLaZfbwniaBj/s9fMten58AuZH3fgjHOFGuv1ZEjDwLsW7EHzJ4UNzDxJKjxuiXu49sxyVYn4pJrsZ7HkTWqbADZ2wsOfVI3+HRkKQEAl4IDe3YY97RLbxqoEC10ILrDtkoi7bCdp/d2sBr/5Qij+JQM8VYREfpnJZWrvrIm5cZSo/9iNmm3q/6sC9JdA/6rwz+w5Ek6F6AjtuDSenOxRsWhzkNtRqiV3Cu1cpkESoLnTR0lo+GK+mJL5NW+8lhFQz4sABeFJRzopu+1eodH4s1kQDrM05+5cVumzYU5iB9VdsRKmPBhRNzRsrNRvySFixzS8BVBVD60DMsSZN1BRWHHuMluV+T9rTyWBjcgXxzCs+F4FNKa4wwEC4viFtpvNQXs2riA+KqUS1sP/O7xHkay/jvvl7P6FbcFmU7T5QXMnMrBvDIetye9zLT1NgqLYJvuVnUNCKIkc5RmN1biqlKEvCQTAQRmBlRicP5bicMZkvURKmPBCvz4UyWVzR7I/l65vZR3IMveAlDvyj8oRJv+jHilw9snKrIRCq8AvSONKMVzh/3XtwH+oQkYASUMBMymKmKA4bEdoXoD5xQr3ogSm6cBjaIAPt+lj73pOk2QuEgocCoB0=

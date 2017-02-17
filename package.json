@@ -1,6 +1,6 @@
 {
   "name": "lazarini",
-  "version": "0.0.0-semantically-released",
+  "version": "0.0.1",
   "description": "The one-and-only LDD framework (Lazarini-driven Development)",
   "main": "index.js",
   "config": {
@@ -18,7 +18,7 @@
     "start": "#:zap Running the app \n\t npm run build && npm run server:create",
     "server": "echo 'Placeholder task to run `npm-run-all server:*`'",
     "server:dev": "nodemon app.js",
-    "server:create": "cross-var PKG_VERSION=$npm_package_version node app.js",
+    "server:create": "./node_modules/.bin/cross-var \"PKG_VERSION=$npm_package_version PORT=$npm_package_config_port node app.js\"",
     "server:create:db": "cross-var http-server dist/$npm_package_config_port -p $npm_package_config_port",
     "server:launch": "opn http://localhost:$npm_package_config_port/",
     "prebuild": "cross-var rimraf dist/$npm_package_version/ && mkdir -p dist/$npm_package_version",
