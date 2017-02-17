@@ -5,6 +5,9 @@
   "main": "index.js",
   "config": {
     "port": "5000",
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    },
     "ghooks": {
       "precommit": "npm run test"
     }
@@ -104,9 +107,6 @@
     "stylefmt": "5.1.1",
     "stylelint": "7.8.0",
     "uglifyjs": "2.4.10"
-  },
-  "czConfig": {
-    "path": "./node_modules/cz-conventional-changelog"
   },
   "babel": {
     "presets": [
