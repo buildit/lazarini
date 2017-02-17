@@ -14,4 +14,4 @@ $ yarn
 $ npm test
 ```
 
-## Respect nature and your peers, wash your hands
+## Respect nature and your peers, wash your hands and tromblon
