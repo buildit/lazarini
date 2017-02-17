@@ -4,7 +4,13 @@
   "description": "The one-and-only LDD framework (Lazarini-driven Development)",
   "main": "index.js",
   "config": {
-    "port": "5000"
+    "port": "5000",
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    },
+    "ghooks": {
+      "precommit": "npm run test"
+    }
   },
   "scripts": {
     "doc": "echo \"\\n\\n  8===o  \\n\\n\"",
@@ -15,7 +21,7 @@
     "start": "#:zap Running the app \n\t npm run build && npm run server:create",
     "server": "echo 'Placeholder task to run `npm-run-all server:*`'",
     "server:dev": "nodemon app.js",
-    "server:create": "cross-var PKG_VERSION=$npm_package_version node app.js",
+    "server:create": "./node_modules/.bin/cross-var \"PKG_VERSION=$npm_package_version PORT=$npm_package_config_port node app.js\"",
     "server:create:db": "cross-var http-server dist/$npm_package_config_port -p $npm_package_config_port",
     "server:launch": "opn http://localhost:$npm_package_config_port/",
     "prebuild": "cross-var rimraf dist/$npm_package_version/ && mkdir -p dist/$npm_package_version",
@@ -39,7 +45,8 @@
     "cover:open": "opn coverage/lcov-report/index.html",
     "prepush": "npm run lint",
     "heroku-prebuild": "echo This runs before Heroku installs your dependencies.",
-    "heroku-postbuild": "echo This runs afterwards."
+    "heroku-postbuild": "echo This runs afterwards.",
+    "commit": "./node_modules/.bin/git-cz"
   },
   "repository": {
     "type": "git",
@@ -68,9 +75,11 @@
     "babelify": "7.3.0",
     "browserify": "14.0.0",
     "codecov.io": "0.1.6",
+    "commitizen": "2.9.6",
     "cross-env": "3.1.4",
     "cross-var": "1.0.2",
     "cssmin": "0.4.3",
+    "cz-conventional-changelog": "1.2.0",
     "dotenv": "4.0.0",
     "eslint": "3.15.0",
     "eslint-config-airbnb": "14.1.0",
@@ -117,5 +126,10 @@
     ],
     "cache": true,
     "all": true
+  },
+  "devDependencies": {
+    "commitizen": "2.9.6",
+    "cz-conventional-changelog": "1.2.0",
+    "ghooks": "2.0.0"
   }
 }
