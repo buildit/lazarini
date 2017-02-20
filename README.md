@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/buildit/lazarini.svg?branch=master)](https://travis-ci.org/buildit/lazarini)
-[![Codecov](https://img.shields.io/codecov/c/github/codecov/buildit/lazarini.svg)](https://codecov.io/gh/buildit/lazarini/)
+[![Codecov](https://img.shields.io/codecov/c/github/buildit/lazarini.svg)](https://codecov.io/gh/buildit/lazarini/)
 [![Heroku](https://heroku-badge.herokuapp.com/?app=lazarini&svg=1)](http://lazarini.herokuapp.com/)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![npm](https://img.shields.io/npm/l/express.svg)]()
@@ -14,7 +14,7 @@
 
 
 # Lazarini Driven Development
-
+🚀
 
 ## LDD
 Lives on: http://lazarini.herokuapp.com/
@@ -28,4 +28,3 @@ $ npm run start
 ```sh
 $ npm test
 ```
-
