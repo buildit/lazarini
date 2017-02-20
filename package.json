@@ -14,7 +14,7 @@
   },
   "scripts": {
     "doc": "echo \"\\n\\n  8===o  \\n\\n\"",
-    "bunlde": "./scripts/script.sh",
+    "bundle": "./scripts/script.sh",
     "list-env-var": "npm run env",
     "postinstall": "npm run build",
     "prestart": "echo 'PRE START SCRIPT'",
