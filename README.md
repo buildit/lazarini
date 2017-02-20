@@ -3,7 +3,12 @@
 [![Heroku](https://heroku-badge.herokuapp.com/?app=lazarini)](https://heroku-badge.herokuapp.com/?app=lazarini)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![npm](https://img.shields.io/npm/l/express.svg)]()
-
+[![Docker Automated buil](https://img.shields.io/docker/automated/wiprodigital/lazarini.svg)](https://img.shields.io/docker/automated/wiprodigital/lazarini.svg)
+[![Docker Stars](https://img.shields.io/docker/stars/wiprodigital/lazarini.svg)](https://img.shields.io/docker/stars/wiprodigital/lazarini.svg)
+[![Docker Pulls](https://img.shields.io/docker/pulls/wiprodigital/lazarini.svg)](https://img.shields.io/docker/pulls/wiprodigital/lazarini.svg)
+[![Twitter Follow](https://img.shields.io/twitter/follow/Fif0o.svg?style=social&label=Follow)]()
+[![Twitter URL](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)]()
+[![GitHub followers](https://img.shields.io/github/followers/fif0o.svg?style=social&label=Follow)]()
 
 
 # LDD
